@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--text-color);
+}
+
+html,body {
+    height: 100%;
+    width: 100%;
+    background: var(--primary-color);
+}
+
+/* code to remove default behavior of all anchor(a) tags */
+* a {
+    text-decoration: none;
+    /* color: var(--text-color); */
+}
+
+/* Styling for to remove background video */
+.background {
+    display: none;
+}
+
+
+/* Styling for nav bar on mobile screen */
+.nav-bar {
+    display: flex;
+    height: 7vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+
+.nav-bar .logo {
+    color: #5DD459;
+}
+
+.nav-bar .options{
+    display: none;
+}
+
+.nav-bar .buttons {
+    padding: .3rem 1rem;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.nav-bar .buttons #signin,#login {
+    display: none;
+}
+
+
+/* Style for side bar for mobile */
+.side-bar {
+    z-index: 9;
+    height: calc(100vh - 7vh);
+    width: 66vw;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3); 
+}
+
+.side-bar .options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0;
+}
+
+.side-bar .options hr {
+    width: 80%;
+    align-self: center;
+}
+
+.side-bar {
+    display: none;
+}
+
+/* Style for hero section */
+.hero-section .text {
+    text-align: center;
+    margin-top: 1.4rem;
+    font-weight: bolder;
+    letter-spacing: 1.2px;
+    color: var(--green-color);
+    font-size: 2rem;
+}
+
+.hero-section .wrapper {
+    display: none;
+}

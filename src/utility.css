@@ -1,0 +1,14 @@
+:root {
+    --primary-color: #4d4c4c;
+    --text-color: #dbd8d8;
+    --secondary-color: #c5c3c3;
+    --green-color: #5DD459;
+
+}
+
+.green {
+    color: var(--green-color);
+    text-decoration: 2px underline var(--text-color);
+    border-radius: 3px;
+}
+
