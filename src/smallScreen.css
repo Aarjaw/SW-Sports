@@ -3,12 +3,14 @@
     padding: 0;
     box-sizing: border-box;
     color: var(--text-color);
+    user-select: none;
 }
 
 html,body {
     height: 100%;
     width: 100%;
     background: var(--primary-color);
+    z-index: 1;
 }
 
 /* code to remove default behavior of all anchor(a) tags */
@@ -58,7 +60,7 @@ html,body {
 
 /* Style for side bar for mobile */
 .side-bar {
-    z-index: 9;
+    z-index: 99;
     height: calc(100vh - 7vh);
     width: 66vw;
     background: rgba(255, 255, 255, 0.2);
@@ -67,6 +69,7 @@ html,body {
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.3); 
+    display: none;
 }
 
 .side-bar .options {
@@ -82,10 +85,6 @@ html,body {
     align-self: center;
 }
 
-.side-bar {
-    display: none;
-}
-
 /* Style for hero section */
 .hero-section .text {
     text-align: center;
@@ -97,5 +96,9 @@ html,body {
 }
 
 .hero-section .wrapper {
+    display: none;
+}
+
+.page-2,.page-3,.page-4,.page-5 {
     display: none;
 }

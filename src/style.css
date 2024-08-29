@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    user-select: none;
 }
 
 html,body {
@@ -17,8 +18,9 @@ html,body {
     color: var(--text-color);
 }
 
+/*! Code for page 1 */
 /* Styling for background video */
-.background {
+.page-1 .background {
     width: 100vw;
     height: 100vh;
     overflow-y: hidden;
@@ -28,7 +30,7 @@ html,body {
 }
 
 /* Styling for nav-bar */
-.nav-bar {
+.page-1 .nav-bar {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -90,6 +92,7 @@ html,body {
 
 /* Styling for buttons on nav bar */
 .button {
+    cursor: pointer;
     padding: .3rem;
     background: rgba(255, 255, 255, 0.2);
     border-radius: 10px;
@@ -125,21 +128,23 @@ html,body {
     font-size: 140px;
     font-weight: 900;
     text-align: center;
+    -webkit-text-stroke: 2.5px var(--green-color);
 }
 
 .hero-section .text::before {
     content: "EAT.DRINK.PLAY";
     position: absolute;
+    top: 6px;
     color: var(--text-color);
     -webkit-text-stroke: 2.5px var(--green-color);
-    z-index: 1;
+    /* z-index: 1; */
 }
 
 
 /* Styling for main part cards */
 .wrapper {
     width: 100%;
-    height: 65vh;
+    height: 60vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -232,3 +237,148 @@ input:checked + label .description {
     background-image: url('../assets/images/image-4.jpg');
 }
 
+/*! Code for page second */
+.page-2 {
+    height: 100vh;
+    width: 100vw;
+    color: var(--primary-color);
+}
+
+.page-2 .container .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    height: 100vh;
+}
+
+.page-2 .content .description {
+    border-left: 2px solid black;
+    border-right: none;
+    border-radius: 1px;
+    padding-left: 1rem;
+}
+
+/*! Code for page 3 */
+.page-3 {
+    height: 100vh;
+    width: 100vw;
+    background: var(--primary-color);
+    display: flex;
+}
+
+.page-3 .content{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 0 1.5rem;
+} 
+
+.content .description {
+    border-right: 2px solid var(--text-color);
+    padding: 1rem;
+}
+
+.page-3 .container {
+    width: 50%;
+}
+
+/* !Code for page 4 */
+.page-4 {
+    height: 100vh;
+    width: 100vw;
+    color: var(--primary-color);
+}
+
+.page-4 .container .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    height: 100vh;
+}
+
+.page-4 .content .description {
+    border-left: 2px solid black;
+    border-right: none;
+    border-radius: 1px;
+    padding-left: 1rem;
+}
+
+/* !Code for page 5 */
+.page-5 {
+    height: 100vh;
+    width: 100vw;
+    background: var(--primary-color);
+    display: flex;
+}
+
+.page-5 .content{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 0 1.5rem;
+} 
+
+.content .description {
+    border-right: 2px solid var(--text-color);
+    padding: 1rem;
+}
+
+.page-5 .container {
+    width: 50%;
+}
+
+/* code to define height and width of image same for all */
+.container {
+    margin-top: 1rem;
+    display: flex;
+}
+
+.container .image {
+    overflow: hidden;
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image img {
+    border-radius: 5px;
+    object-fit: cover;
+    height: 50%;
+    width: 50%;
+}
+
+.foot {
+    height: 20vh;
+    width: 100vw;
+    background: var(--primary-color);
+    display: flex;
+}
+
+#main .hr {
+    width: 80vw;
+    color: green;
+}
+
+.foot .social-media {
+    height: 100%;
+    width: 50%;
+    /* background: green; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.foot .copyright {
+    height: 100%;
+    width: 50%;
+    /* background: magenta; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
